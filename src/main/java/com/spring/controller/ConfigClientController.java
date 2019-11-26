@@ -17,12 +17,12 @@ import java.util.Map;
 @RefreshScope
 public class ConfigClientController {
 
-    @Value("${info.property}")
-    private String property;
+    @Value("${msg:Hello world - Config Server is not working..pelase check}")
+    private String msg;
 
     @GetMapping("/message")
     String property() {
-        return property;
+        return msg;
     }
 
 }
